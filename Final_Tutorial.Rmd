@@ -13,7 +13,7 @@ According to Business Insider, Amazon ranks fifth for companies that computer sc
 (Optional Read) Business Insider Article "15 places where computer science majors dream of working": highlyhttp://www.businessinsider.com/dream-companies-and-organizations-for-computer-science-students-2017-5#6-blizzard-entertainment-10
 
 
-##Include Libraries
+## Include Libraries
 
 We will be using the following libraries in our data analysis, so it is important that we download them "install.packages(<package_name>)" and then include them here. They do as follows,
 
@@ -223,7 +223,7 @@ amazon_df
 ```
 Now we are FINALLY done tidying the data amazon_df data. Let's do some data analysis on the dataset.
 
-##Data Analysis
+## Data Analysis
 
 Let's now analyze the data. We will look at:
 - Jobs per country
@@ -368,7 +368,7 @@ Here is another example of Hypothesis Testing for difference in proportions: htt
 If that still does not make sense, try looking at this example, which goes much more in depth:
 http://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/
 
-##Average UMD Student Amazon Job Search using SQL
+## Average UMD Student Amazon Job Search using SQL
 Finally, let's take a look at the jobs that a typical newly-graduated UMD Student would be qualified for. To do this, I will find jobs that have skills taught in University of Maryland undergraduate coursework. I will also consider experience level, location, and level of educational degree.
 
 In this bit, I will be using SQL (Structured Query Language) so that we can get familiar with another useful skill. We will do this by using the "sqldf" library that we included in the beginning
@@ -408,7 +408,7 @@ While we did not use very much of it in this tutorial, SQL (Structured Query Lan
 ## Conclusion
 
 Knowing which skills are required in current job postings is incredibly important for individuals looking to secure these jobs. By using data science, we were able to take pretty poor data inputs and turn them into useful data analysis which helped us learn what Amazon is looking for in their future employees.
-While we did a lot of data cleaning and data analysis, there is still much more we could do. For example, we could scrape spectrum and compare their top languages to those used by Amazon. https://spectrum.ieee.org/ns/IEEE_TPL_2017/index/2017/1/1/1/1/1/50/1/50/1/50/1/30/1/30/1/30/1/20/1/20/1/5/1/5/1/20/1/100/
+While we did a lot of data cleaning and data analysis, there is still much more we could do. For example, we could scrape tiobe and compare their top languages to those used by Amazon. https://www.tiobe.com/tiobe-index/
 You could easily do as followed and then do some more analysis.
 
 ```{r}
