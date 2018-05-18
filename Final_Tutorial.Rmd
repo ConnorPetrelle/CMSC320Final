@@ -17,12 +17,14 @@ According to Business Insider, Amazon ranks fifth for companies that computer sc
 
 We will be using the following libraries in our data analysis, so it is important that we download them "install.packages(<package_name>)" and then include them here. They do as follows,
 
+tidyverse: Set of packages designed to make it easy to install multiple packages
 tidyr: Makes it easy to tidy data
 stringr: Contains Convenient Functions on Strings
 ggplot2: Used to Create Plots and Graphs
 sqldf: Manipulates R Data Frames Using SQL
 ```{r setup, include=FALSE}
 
+library(tidyverse)
 library(tidyr)
 library(stringr)
 library(ggplot2)
@@ -30,7 +32,7 @@ library(sqldf)
 
 ```
 For more information on any of these libraries, check out the following links:
-tidyverse (Collection of packages): https://www.tidyverse.org/packages/
+tidyverse: https://www.tidyverse.org/packages/
 tidyr: https://cran.r-project.org/web/packages/tidyr/tidyr.pdf
 stringr: ftp://cran.r-project.org/pub/R/web/packages/stringr/stringr.pdf
 ggplot2: https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf
