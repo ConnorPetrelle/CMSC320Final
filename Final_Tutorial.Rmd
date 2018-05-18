@@ -65,11 +65,13 @@ We will be using regexpr and str_sub here. These are described below
 
 Regular Expressions match string inputs to ensure they are of a certain type. In this scenario, we want inputs that have two commas, indicating that there is a valid state attribute, to have a state attribute. Those that do not should have NA
 
-For more information on regexpr, go to: http://rfunction.com/archives/1719
+For more information on regexpr, go to: 
+http://rfunction.com/archives/1719
 
 str_sub gets a substring of a string from a given 'start' to a given 'end', including the character at both locations.
 
-For more information on str_sub, go to: https://www.rdocumentation.org/packages/stringr/versions/0.6.2/topics/str_sub
+For more information on str_sub, go to: 
+https://www.rdocumentation.org/packages/stringr/versions/0.6.2/topics/str_sub
 
 ```{r}
 
