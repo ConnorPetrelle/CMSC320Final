@@ -1,12 +1,10 @@
 ---
-title: "CMSC320Final_Tutorial"
+title: "Amazon Job Listings"
 author: "Connor Petrelle"
 date: "May 15, 2018"
 output: html_document
 ---
 
-# Amazon Job Listings
-### Connor Petrelle
 
 ![](amazon-logo.jpg)
 ## Introduction
@@ -223,7 +221,7 @@ amazon_df$Description <- NULL
 #Omit data with NA
 amazon_df <- na.omit(amazon_df)
 
-amazon_df
+amazon_df %>% sample_n(50)
 ```
 Now we are FINALLY done tidying the data amazon_df data. Let's do some data analysis on the dataset.
 
@@ -377,9 +375,9 @@ Finally, let's take a look at the jobs that a typical newly-graduated UMD Studen
 
 In this bit, I will be using SQL (Structured Query Language) so that we can get familiar with another useful skill. We will do this by using the "sqldf" library that we included in the beginning
 ```{r}
-sqldf("SELECT * FROM amazon_df")
+sqldf("SELECT * FROM amazon_df LIMIT 50")
 ```
-In this simple query, we simply SELECTed all attributes FROM our dataset amazon_df. The star (*) means "all" in SQL. This did not really do much, since all it did was give us back amazon_df. However, we can make it do more interesting things. Let's try something more interesting. 
+In this simple query, we simply SELECTed all attributes FROM our dataset amazon_df. We then Limited it to only 50 elements, since displaying over 3000 would be way too many. The star (*) means "all" in SQL. This did not really do much, since all it did was give us back amazon_df. However, we can make it do more interesting things. Let's try something more interesting. 
 Through coursework at the University of Maryland, a student should know C, Java, Ruby, and, after taking CMSC320, R and SQL. Let's see if there are jobs that require all of these.
 In this query, we are going to use the command "WHERE" to complete the SELECT-FROM-WHERE construct. This construct specifies:
 SELECT: Which attributes
